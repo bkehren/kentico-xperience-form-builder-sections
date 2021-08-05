@@ -1,28 +1,17 @@
 ﻿using Kentico.Forms.Web.Mvc;
 using Kentico.Forms.Web.Mvc.Widgets;
 
+
+/// <summary>
+/// Documentation link:
+/// https://docs.xperience.io/developing-websites/form-builder-development/customizing-the-form-widget#CustomizingtheFormwidget-Settingglobalrenderingconfigurations
+/// </summary>
 namespace AskTheExpertsDemo
 {
     public class FormBuilderCustomizations
     {
         public static void SetGlobalRenderingConfigurations()
         {
-            //// Modifies the default FormFieldRenderingConfiguration for the 'Form' widget
-            //// Specifying a new FormFieldRenderingConfiguration instance completely replaces the default Kentico configuration
-            //FormFieldRenderingConfiguration.Widget.RootConfiguration =
-            //     new ElementRenderingConfiguration
-            //     {
-            //         ElementName = "div",
-            //         HtmlAttributes = { { "class", "form-field" } }
-            //     };
-
-            //FormFieldRenderingConfiguration.Widget.ExplanationTextWrapperConfiguration =
-            //     new ElementRenderingConfiguration
-            //     {
-            //         ElementName = "div",
-            //         HtmlAttributes = { { "class", "explanation-text" } }
-            //     };
-
             // Wraps input and explanation text
             FormFieldRenderingConfiguration.Widget.EditorWrapperConfiguration =
                 new ElementRenderingConfiguration
@@ -46,18 +35,6 @@ namespace AskTheExpertsDemo
 
                 // Submit button HTML attributes
                 SubmitButtonHtmlAttributes = { { "class", "btn btn-primary submit-button" } }
-
-                //// Elements wrapping the Form element
-                //FormWrapperConfiguration = new FormWrapperRenderingConfiguration
-                //{
-                //    ElementName = "div",
-                //    HtmlAttributes = { { "class", "form-widget-form" } },
-                //    // Adds an additional div element wrapper
-                //    ChildConfiguration = new ElementRenderingConfiguration
-                //    {
-                //        ElementName = "div"
-                //    }
-                //}
             };
         }
     }

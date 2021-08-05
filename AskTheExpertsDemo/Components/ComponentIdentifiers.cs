@@ -3,8 +3,6 @@ namespace AskTheExpertsDemo
 {
     public class ComponentIdentifiers
     {
-        public const string DEFAULT_SECTION = "Section.Default";
-
         /// <summary>
         /// Form Sections
         /// </summary>
@@ -25,11 +23,10 @@ namespace AskTheExpertsDemo
         /// Form Components
         /// </summary>
         public const string FORM_COMPONENT_HEADLINE_INPUT = "ATED.Form.Component.HeadlineInput";
-        public const string FORM_COMPONENT_HIDDEN_FIELD = "ATED.Form.Component.HiddenField";
 
         /// <summary>
         /// Form Component Views
         /// </summary>
-        public const string FORM_COMPONENT_HEADLINE_VIEW = "~/Components/FormComponents/_HeadlineComponent.cshtml";
+        public const string FORM_COMPONENT_HEADLINE_VIEW = "~/Components/FormComponents/_HeadlineInputComponent.cshtml";
     }
 }

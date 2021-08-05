@@ -1,5 +1,9 @@
 ﻿using Kentico.Forms.Web.Mvc;
 
+/// <summary>
+/// Documentation Link:
+/// https://docs.xperience.io/developing-websites/form-builder-development/developing-form-components
+/// </summary>
 namespace AskTheExpertsDemo.Models.FormComponents
 {
     public class HeadlineInputComponent : FormComponent<HeadlineInputComponentProperties, string>

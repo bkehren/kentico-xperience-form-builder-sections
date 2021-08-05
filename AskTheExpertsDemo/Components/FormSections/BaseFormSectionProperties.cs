@@ -1,6 +1,10 @@
 ﻿using Kentico.Components.Web.Mvc.FormComponents;
 using Kentico.Forms.Web.Mvc;
 
+/// <summary>
+/// Documentation Link:
+/// https://docs.xperience.io/developing-websites/form-builder-development/developing-custom-form-layouts
+/// </summary>
 namespace AskTheExpertsDemo.Models
 {
     public class BaseFormSectionProperties : IFormSectionProperties
