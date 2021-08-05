@@ -114,7 +114,7 @@
     margin-top: 0.25rem;
 }
 
-.form-row {
+.row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -124,8 +124,8 @@
     margin-left: 0px;
 }
 
-    .form-row > .col,
-    .form-row > [class*="col-"] {
+    .row > .col,
+    .row > [class*="col-"] {
         padding-right: 0px;
         padding-left: 0px;
     }
