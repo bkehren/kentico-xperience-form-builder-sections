@@ -1,0 +1,12 @@
+﻿@model AskTheExpertsDemo.Components.Widgets.RatesWidget.RatesWidgetViewModel
+
+<div class="row">
+    <div class="col">
+        <ul>
+            @foreach(var m in Model.Rates)
+            {
+                <li>@m.RateTitle - @m.RateAmount<br /><span class="text-muted">@m.RateDescription</span></li>
+            }
+        </ul>
+    </div>
+</div>

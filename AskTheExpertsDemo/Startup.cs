@@ -13,6 +13,7 @@ using AskTheExpertsDemo.Infastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Routing;
 using Kentico.Forms.Web.Mvc;
+using AskTheExpertsDemo.Models.Widgets.Rates;
 
 namespace BlankSiteCore
 {
@@ -30,6 +31,8 @@ namespace BlankSiteCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IRatesRepo, RatesRepo>();  
+
             // Ensures redirect to the administration instance based on URL defined in settings
             //services.AddSingleton<IStartupFilter>(new AdminRedirectStartupFilter(Configuration));
 
